@@ -1,0 +1,44 @@
+p {
+	color: navy;
+}
+
+p.info {
+	font-size: small;
+	background-color: #dfdfdf;
+}
+
+h1 {
+	background-color: #ffffff;
+	text-shadow: navy 0px 0 10px;
+	color:#ffffff
+}
+
+h2 {
+	color: #3f3faf;
+	margin:  5px;
+	font-family: cursive;
+	background: linear-gradient(0.25turn,white,#ffefaf);
+	
+}
+
+div#zentai {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	flex-direction: row;
+	grid-auto-flow: 200px 200px;
+	grid-gap: 10px;
+	margin: 5px;
+	width: 1024px;
+}
+
+div#zentai > div {
+	background-color: #ffefaf;
+	margin-left: 5px;
+}
+
+img.sign {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 10px;
+}
