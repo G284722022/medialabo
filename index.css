@@ -4,10 +4,17 @@ h1 {
 	color:#ffffff
 }
 
-#本テーマの学習目標 {
-    border-bottom: thick double #32a1ce
+#本テーマの学習目標{
+    color:#1183b0
 }
 
+#本テーマの学習目標 {
+    border-bottom: thick double #1183b0
+}
 #プロジェクト課題について {
-    color:darkturquoise;
+    color:#1183b0
+}
+
+a:hover{
+    color:rgb(51, 127, 174)
 }
