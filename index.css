@@ -3,15 +3,14 @@ h1 {
 	text-shadow: navy 0px 0 10px;
 	color:#ffffff
 }
-
-#本テーマの学習目標{
-    color:#1183b0
-}
-
 #本テーマの学習目標 {
-    border-bottom: thick double #1183b0
+    border-bottom: thick double #1183b0;
+    background: linear-gradient(0.25turn,rgb(149, 234, 245), #e4f0f1);
 }
-#プロジェクト課題について {
+h2{
+    color:mediumblue;
+}
+h3{
     color:#1183b0
 }
 
