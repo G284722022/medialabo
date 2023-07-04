@@ -55,3 +55,8 @@ console.log(data.main.humidity);
 console.log(data.wind.speed);
 console.log(data.wind.deg);
 console.log(data.name);
+
+let p1 = document.querySelector('div#result');
+p1.textContent = ("緯度: "+data.coord.lon);
+let p2 = document.querySelector('div#result');
+p2.textContent = ("都市名: "+data.name);
