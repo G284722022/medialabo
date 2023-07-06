@@ -8,16 +8,14 @@ let kaisu = 1;
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
-hantei();
-hantei();
-hantei();
-hantei();
+let b = document.querySelector( '#answer');
+b.addEventListener('click', hantei);
 
 // ボタンを押した後の処理をする関数 hantei() の定義
-function hantei() {
+function hantei(){
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = 4;
-  
+  let i = document.querySelector('input[name="yoso"]');
+  let yoso = i.value; 
   // 課題3-1: 正解判定する  
 
   let SpanKaisu = document.querySelector('span#kaisu');
@@ -29,29 +27,23 @@ function hantei() {
   let SpanResult = document.querySelector('p#result');
 
   if(kaisu < 3){
-    if(hantei === kotae){
+    if(yoso == kotae){
       SpanResult.textContent = '正解です。おめでとう!';
+    }else if(yoso < kotae){
+      SpanResult.textContent = '残念、答えはもっと大きいです。';
     }else{
-      if(hantei<kotae){
-        SpanResult.textContent = '残念、答えはもっと大きいです。';
-      }else{
-        SpanResult.textContent = '残念、答えはもっと小さいです。';
-      }
+      SpanResult.textContent = '残念、答えはもっと小さいです。';
     }
   }else if(kaisu === 3){
-    if(hantei === kotae){
+    if(yoso == kotae){
       SpanResult.textContent = '正解です。おめでとう!';
     }else{
-      if(hantei<kotae){
-        SpanResult.textContent = '残念! 答えは'+kotae+'でした';
-      }else{
-        SpanResult.textContent = '残念! 答えは'+kotae+'でした';
-      }
+      SpanResult.textContent = '残念! 答えは'+kotae+'でした';
     }
-    }else if(kaisu > 3){
-      SpanResult.textContent = 'すでにゲームは終わっています。答えは'+kotae+'でした';
-    }
+  }else{
+    SpanResult.textContent = 'すでにゲームは終わっています。答えは'+kotae+'でした';
+  }
     kaisu = kaisu + 1;
+  }
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-}
