@@ -1,19 +1,22 @@
 h1 {
+    background: linear-gradient(0.25turn,rgb(148, 215, 232), #e4f0f1);
 	background-color: #ffffff;
 	text-shadow: navy 0px 0 10px;
 	color:#ffffff
 }
-#本テーマの学習目標 {
+#本テーマの学習目標{
     border-bottom: thick double #1183b0;
-    background: linear-gradient(0.25turn,rgb(149, 234, 245), #e4f0f1);
 }
+
 h2{
     color:mediumblue;
 }
+
 h3{
     color:#1183b0
 }
 
+
 a:hover{
-    color:rgb(51, 127, 174)
+    color:#1183b0
 }
